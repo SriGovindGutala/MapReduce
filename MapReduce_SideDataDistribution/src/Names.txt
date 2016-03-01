@@ -1,0 +1,3 @@
+Govi,20
+Uppu,10
+Rajesh,5

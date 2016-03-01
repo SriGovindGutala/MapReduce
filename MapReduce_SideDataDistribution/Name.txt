@@ -1,0 +1,7 @@
+Govi,20
+Uppu,10
+Rajesh,5
+
+Govi,10,m
+Govi,20,m
+Uppu,10,m
