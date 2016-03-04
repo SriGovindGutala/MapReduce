@@ -41,13 +41,13 @@ public class DCExample1 {
 	    	//.getName().
 	    	String strLineRead;
 	    	int i = 0;
-			while ((strLineRead = brReader.readLine()) != null) {
+			while ((strLineRead = brReader.readLine()) != null) 
+			{
 	    		//Offset.add(strLineRead);
 				cache[i] = strLineRead;
 				i++;
 			}
-	    	
-	    }
+	      }
 	    public void map(Object key, Text value, Context context) throws IOException, InterruptedException 
 	    {
 	    	// StringTokenizer itr = new StringTokenizer(value.toString(),",");
@@ -82,7 +82,6 @@ public class DCExample1 {
 	  public static void main(String[] args) throws Exception 
 	  {
 	    Configuration conf = new Configuration();
-	
 	    DistributedCache.addCacheFile(new URI("Govind/Inputs/DistributedCache/offset"),conf);
 	    Job job = new Job(conf, "word count");
 	    job.setJarByClass(DCExample1.class);
